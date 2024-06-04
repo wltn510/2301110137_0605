@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .fade-in.show {
+        opacity: 1;
+    }
+</style>
+<body>
+    <div id="recent-views-bar">
+        <div class="before">
+            <h4>최근 본 상품</h4>
+        </div>
+        <ul id="recent-views-list">
+            <li><img src="img/item_img7.jpg" alt=""></li>
+            <li><p>카카오프렌즈 4본 연필세트</p></li>
+            <li><img src="img/item_img6.jpg" alt=""></li>
+            <li><p>산리오 학용품 문구세트</p></li>
+            <li><img src="img/item_img9.jpg" alt=""></li>
+            <li><p>짱구는 못말려 봉제 필통</p></li>
+        </ul>
+        <div class="top" id="scroll-to-top">
+            <h4>TOP</h4>
+        </div>
+    </div>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="">회원가입</a></li>
+            <li><a href="">주문조회</a></li>
+            <li><a href="">마이페이지</a></li>
+            <li><a href=""><img src="img/cart_icon.png" alt=""></a></li>
+            <li><div class="search-container">
+                <input id="keyword" name="keyword" fw-filter fw-label="검색어" fw-msg class="iarchForm(this)" value type="text">
+                <img src="img/search_icon.png" alt="">
+            </div></li>
+        </ul>
+    </div>
+    <div class="header">
+        <a href="index1.html"><img src="img/logo.png" alt=""></a>
+    </div>
+    <div class="header_nav">
+        <ul>
+            <li><a href=""><img src="img/menu_icon.png" alt=""></a></li>
+            <li><a href="">전체상품</a></li>
+            <li><a href="">베스트</a></li>
+            <li><a href="">세일</a></li>
+            <li><a href="">재입고</a></li>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">상품문의</a></li>
+        </ul>
+    </div>
+
+    <div class="category_h1"><h1>상품 카테고리</h1></div>
+    <hr>
+    <div class="category">
+        <ul class="ul1">
+            <li><a href=""><img src="img/category_img1.png" alt=""></a><h3>필기구</h3></li>
+            <li><a href=""><img src="img/category_img2.png" alt=""></a><h3>사무용품</h3></li>
+            <li><a href=""><img src="img/category_img3.png" alt=""></a><h3>파일/바인더</h3></li>
+            <li><a href=""><img src="img/category_img4.png" alt=""></a><h3>노트</h3></li>
+            <li><a href=""><img src="img/category_img5.png" alt=""></a><h3>잉크/복사</h3></li>
+        </ul>
+        <ul class="ul2">
+            <li><a href=""><img src="img/category_img6.png" alt=""></a><h3>전자기기</h3></li>
+            <li><a href=""><img src="img/category_img7.png" alt=""></a><h3>사무기기</h3></li>
+            <li><a href=""><img src="img/category_img8.png" alt=""></a><h3>학용품/교재</h3></li>
+            <li><a href=""><img src="img/category_img9.png" alt=""></a><h3>화방용품</h3></li>
+            <li><a href=""><img src="img/category_img10.png" alt=""></a><h3>장난감</h3></li>
+        </ul>
+    </div>
+
+    <div class="best_h1 fade-in"><h1>전체 상품</h1></div>
+    <hr>
+    <div class="sort fade-in">
+        <select id ="selArray" name="selArray" class="">
+            <option value="">신상품</option>
+            <option value="">인기상품</option>
+            <option value="">낮은가격</option>
+            <option value="">높은가격</option>
+        </select>
+    </div>
+    <div class="best_item fade-in">
+        <div class="best_item_img">
+            <ul class="item_ul1">
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img1.jpg" alt="">
+                    </div>
+                    <h4>노란병아리 크레용 48색</h4>
+                    <h5>9,900원</h5>
+                </a></li>
+
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img2.jpg" alt="">
+                    </div>
+                    <h4>아모스 파스넷 36색</h4>
+                    <h5>17,500원</h5>
+                </a></li>
+
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img3.jpg" alt="">
+                    </div>
+                    <h4>넥스프로 색연필 틴케이스</h4>
+                    <h5>17,500원</h5>
+                </a></li>
+            </ul>
+
+            <ul class="item_ul2">
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img4.jpg" alt="">
+                    </div>
+                    <h4>뽀로로 사인펜 12색</h4>
+                    <h5>3,300원</h5>
+                </a></li>
+
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img5.jpg" alt="">
+                    </div>
+                    <h4>아모스 파스넷 색연필 18색</h4>
+                    <h5>10,200원</h5>
+                </a></li>
+
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img6.jpg" alt="">
+                    </div>
+                    <h4>산리오 학용품 문구세트</h4>
+                    <h5>4,200원</h5>
+                </a></li>
+            </ul>
+
+            <ul class="item_ul3">
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img7.jpg" alt="">
+                    </div>
+                    <h4>카카오프렌즈 4본 연필세트</h4>
+                    <h5>2,300원</h5>
+                </a></li>
+
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img8.jpg" alt="">
+                    </div>
+                    <h4>플루이드 파스텔 볼펜 세트</h4>
+                    <h5>1,600원</h5>
+                </a></li>
+
+                <li><a href="index3.html">
+                    <div class="img_container">
+                        <img class="image" src="img/item_img9.jpg" alt="">
+                    </div>
+                    <h4>짱구는 못말려 봉제 필통</h4>
+                    <h5>11,500원</h5>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <ul class="page_select fade-in">
+        <li><a href=""><</a></li>
+        <div class="page_select_number">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+        </div>
+        <li><a href="">></a></li>
+    </ul>
+
+    <footer>
+        <div class="footer">
+            <div class="footer_img">
+                <div class="footer_logo">
+                    <a href=""><img src="img/footer_logo.png" alt=""></a>
+                </div>
+                <div class="sns">
+                    <li><a href=""><img src="img/sns_01.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_02.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_03.png" alt=""></a></li>
+                    <li><a href=""><img src="img/sns_04.png" alt=""></a></li>
+                </div>
+            </div>
+
+            <div class="footer_info">
+                <div class="footer_info1">
+                    <h2>CUSTOMER CENTER</h2>
+                    <h1>010-4612-0504</h1>
+                    <div class="info1_h2">
+                        <h2>월~금 오전 10시~오후 6시</h2>
+                        <h2>토~일, 공휴일 휴무</h2>
+                    </div>
+                </div>
+                <img src="img/line.png" alt="">
+                <div class="footer_info2">
+                    <h2>RETURN ADDRESS</h2>
+                    <div class="info2_h2">
+                        <h2>부산 서구 충무대로 255번길 9</h2>
+                        <h2>충무쇼핑멘션 1층 문방구</h2>
+                    </div>
+                    <div class="info2_h2_2">
+                        <h2>반품 교환은 지정택배로 보내주세요</h2>
+                    </div>
+                </div>
+                <img src="img/line.png" alt="">
+                <div class="footer_info3">
+                    <h2>BANK ACCOUNT</h2>
+                    <h2>농협은행 302-1218-9033-81</h2>
+                    <div class="info3_h2">
+                        <h2>예금주 : 정민우(문구살래)</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>Copyright © 문구살래 All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+            // 'TOP' 버튼 클릭 이벤트 추가
+            const topButton = document.getElementById('scroll-to-top');
+            topButton.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+
+                        // ScrollMagic 컨트롤러 초기화
+                        var controller = new ScrollMagic.Controller();
+
+
+// .fade-in 요소들에 대해 ScrollMagic 장면 추가
+document.querySelectorAll('.fade-in').forEach(function(element) {
+    new ScrollMagic.Scene({
+        triggerElement: element, // 요소가 화면에 나타날 때 트리거
+        triggerHook: 0.9 // 화면의 90% 지점에서 트리거
+    })
+    .on('enter', function() {
+        element.classList.add('show'); // 요소가 화면에 나타나면 .show 클래스 추가
+    })
+    .addTo(controller);
+});
+
+    </script>
+</body>
+</html>
